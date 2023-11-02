@@ -1,0 +1,20 @@
+*{
+    background-color: aqua;
+}
+
+.box{
+
+    display: flex;
+    justify-content: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+    font-weight: bolder;
+    padding-top: 200px;
+}
+ .btn{
+ display: flex;
+ width: 100%;
+ justify-content: center;
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ font-weight: bolder;
+}
