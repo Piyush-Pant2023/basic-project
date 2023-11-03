@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./pant.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+
+        <form>
+            <div class="display">
+            <label for="currecy">amount in rupees</label>
+            <input type="number" id="currency">
+            <br><br><br><br>
+            <label>select currency</label>
+            <select name="currency" onchange="pant(value)">
+
+<div1>
+
+                <option value="" class="lol">select</option>
+                <option value="269" class="lol" >Dinnar</option>
+                <option value="87" class="lol">Euro</option>
+                <option value="83" class="lol">Dollar</option>
+                <option value="0.86" class="lol">Rubble</option>
+            </div>
+            </select>
+            <br>
+            <input type="number" id="output" readonly>
+            </div>
+            
+        </form>
+    </div>
+    </div>
+</body>
+<script>
+    function pant(val) {
+        let inputs = document.getElementsByTagName("input")
+        inputs[1].value = inputs[0].value / val;
+    }
+</script>
+
+</html>
