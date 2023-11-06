@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bulb</title>
+</head>
+<body>
+    <div style="text-align: center;">
+    <button onclick="switchon()">turn on the light</button>
+    <img id="image" src="./pic_bulboff.gif" alt="" height="550px" width="40%">
+    <h1 id="change">bulb is off</h1>
+    <button onclick="switchoff()">turn off the light</button>
+</body>
+<script>
+    function switchon(){
+        document.getElementById("image").src="./pic_bulbon.gif"
+         document.getElementById("change").innerText="bulb is on"
+    }
+    function switchoff(){
+       document.getElementById("image").src="./pic_bulboff.gif"
+       document.getElementById("change").innerText="bulb is off"
+    }
+</script>
+</div>
+</html>
