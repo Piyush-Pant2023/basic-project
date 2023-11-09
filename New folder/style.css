@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.photo {
+    cursor: pointer;
+    margin: 10px;
+}
+
+.photo img {
+    width: 100%x;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.modal {
+
+    position: fixed;
+    
+    padding-top: 50px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background: linear-gradient(to right,black ,white ,pink, black);
+    background-color: rgba(29, 18, 18, 0.9);
+    display: flex;
+}
+
+.modal-content {
+    margin: auto;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.mySlides {
+    width: 80%;
+    height: 100%;
+    display: flex;
+}
+
+img {
+    width: 100%;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.prev {
+    left: 5px;
+}
+
+.next {
+    right: 5px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(201, 61, 61, 0.8);
+}
